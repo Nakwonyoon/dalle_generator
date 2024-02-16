@@ -7,6 +7,17 @@ import { getRandomPrompt } from "../utils";
 import { FormField, Loader } from "../components";
 
 const CreatePost = () => {
+  const navigate = useNavigate();
+  const [form, setform] = useState({
+    name: "",
+    prompt: "",
+    photo: "",
+  });
+
+  const [generatingImg, setgeneratingImg] = useState(false);
+
+  const [loading, setloading] = useState(false);
+
   const generateImage = async () => {};
 
   const handleSubmit = (e) => {};
@@ -19,17 +30,6 @@ const CreatePost = () => {
     const randomPrompt = getRandomPrompt();
     setform({ ...form, prompt: randomPrompt });
   };
-  const navigate = useNavigate();
-
-  const [form, setform] = useState({
-    name: "",
-    prompt: "",
-    photo: "",
-  });
-
-  const [generatingImg, setgeneratingImg] = useState(false);
-
-  const [loading, setloading] = useState(false);
 
   return (
     <section className="max-w-7xl mx-auto">

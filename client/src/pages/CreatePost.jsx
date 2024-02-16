@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -14,7 +15,10 @@ const CreatePost = () => {
     setform({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSurpriseMe = () => {};
+  const handleSurpriseMe = () => {
+    const randomPrompt = getRandomPrompt();
+    setform({ ...form, prompt: randomPrompt });
+  };
   const navigate = useNavigate();
 
   const [form, setform] = useState({
@@ -22,7 +26,9 @@ const CreatePost = () => {
     prompt: "",
     photo: "",
   });
+
   const [generatingImg, setgeneratingImg] = useState(false);
+
   const [loading, setloading] = useState(false);
 
   return (
@@ -92,6 +98,12 @@ const CreatePost = () => {
               Once you have created the image you want, you can share it with
               others in the community
             </p>
+            <button
+              type="submit"
+              className="mt-3 text-white bg-[#6469ff] font-medium rounded-md text-sm w-full sm:w-auto px-5 py-2.5 text-center"
+            >
+              {loading ? "Sharing..." : "Share with the community"}
+            </button>
           </div>
         </div>
       </form>

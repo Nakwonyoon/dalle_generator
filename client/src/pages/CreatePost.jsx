@@ -8,6 +8,7 @@ import { FormField, Loader } from "../components";
 
 const CreatePost = () => {
   const navigate = useNavigate();
+
   const [form, setform] = useState({
     name: "",
     prompt: "",
@@ -18,9 +19,58 @@ const CreatePost = () => {
 
   const [loading, setloading] = useState(false);
 
-  const generateImage = async () => {};
+  const generateImage = async () => {
+    if (form.prompt) {
+      try {
+        //
+        setgeneratingImg(true);
+        const response = await fetch("http://localhost:3000/api/v1/dalle", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            prompt: form.prompt,
+          }),
+        });
 
-  const handleSubmit = (e) => {};
+        const data = await response.json();
+        setform({ ...form, photo: `data:image/jpeg;base64,${data.photo}` });
+      } catch (error) {
+        //
+        alert(error);
+      } finally {
+        setgeneratingImg(false);
+      }
+    } else {
+      alert("Please enter a prompt");
+    }
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (form.prompt && form.photo) {
+      setloading(true);
+      try {
+        const response = await fetch("http://localhost:3000/api/v1/posts", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(form),
+        });
+
+        await response.json();
+        navigate("/");
+      } catch (error) {
+        alert(error);
+      } finally {
+        setloading(false);
+      }
+    } else {
+      alert("Please generate an image first");
+    }
+  };
 
   const handleChange = (e) => {
     setform({ ...form, [e.target.name]: e.target.value });

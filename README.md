@@ -1,5 +1,7 @@
 # Full Stack MERN AI Image Generation App  MidJourney & DALL E Clone
+
 ![Image Generation App](https://i.ibb.co/p0f27C2/Thumbnail-9.png)
+
  <div>
     <img src="https://img.shields.io/badge/-javscript-black?style=for-the-badge&logoColor=white&logo=javscript&color=FFFF00" alt="javscript" />
     <img src="https://img.shields.io/badge/-React-black?style=for-the-badge&logoColor=white&logo=React&color=000000" alt="react" />
@@ -18,7 +20,7 @@
 
 ## <a name="introduction">🤖 Introduction</a>
 
-A powerful and innovative application that leverages the capabilities of OpenAI to generate images based on user inputs, closely emulating the functionality of renowned AI image generation tools like MidJourney and DALL·E. Built with the MERN stack (MongoDB, Express.js, React, Node.js) and styled with TailwindCSS, this app offers a sleek user interface and robust backend to process and render AI-generated images
+A powerful and innovative application that leverages the capabilities of OpenAI to generate images based on user inputs, closely emulating the functionality of renowned AI image generation. Built with the MERN stack (MongoDB, Express.js, React, Node.js) and styled with TailwindCSS, this app offers a sleek user interface and robust backend to process and render AI-generated images
 
 ## <a name="tech-stack">Tech </a>
 - Node.js
@@ -33,7 +35,6 @@ Database Integration: MongoDB database for storing user sessions and generated i
 Responsive Design: Fully responsive web design for an optimal viewing experience across various devices.
 Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
-
 
 ## Acknowledgments
 

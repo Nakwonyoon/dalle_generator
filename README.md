@@ -1,13 +1,18 @@
 # Full Stack MERN AI Image Generation App  MidJourney & DALL E Clone
 ![Image Generation App](https://i.ibb.co/p0f27C2/Thumbnail-9.png)
+ <div>
+    <img src="https://img.shields.io/badge/-javscript-black?style=for-the-badge&logoColor=white&logo=javscript&color=FFFF00" alt="javscript" />
+    <img src="https://img.shields.io/badge/-React-black?style=for-the-badge&logoColor=white&logo=React&color=000000" alt="react" />
+    <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
+  </div>
+
+## 📋 <a name="table">Table of Contents</a>
 
 
 1. 🤖 [Introduction](#introduction)
 2. ⚙️ [Tech Stack](#tech-stack)
 3. 🔋 [Features](#features)
 4. 🤸 [Quick Start](#quick-start)
-
-## 📋 <a name="table">Table of Contents</a>
 
 
 

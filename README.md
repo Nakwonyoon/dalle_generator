@@ -16,10 +16,10 @@
 A powerful and innovative application that leverages the capabilities of OpenAI to generate images based on user inputs, closely emulating the functionality of renowned AI image generation tools like MidJourney and DALL·E. Built with the MERN stack (MongoDB, Express.js, React, Node.js) and styled with TailwindCSS, this app offers a sleek user interface and robust backend to process and render AI-generated images
 
 ## <a name="tech-stack">Tech </a>
-Node.js
-npm
-MongoDB
-OpenAI API Key
+- Node.js
+- npm
+- MongoDB
+- OpenAI API Key
 
 ## <a name="features"> Features </a>
 AI-Driven Image Generation: Generate images using OpenAI's cutting-edge technology.
